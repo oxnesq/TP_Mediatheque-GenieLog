@@ -14,7 +14,12 @@ public class Book extends Item {
 
 	public void setAuthor(String author) {
 		this.author = author;
-	}	
+	}
+
+	@Override
+	public void accept(MediathequeVisitor visitor) {
+
+	}
 
 	public void print() {
 		System.out.println(this);

@@ -7,9 +7,11 @@ public class Main {
         mediatheque.addItem( new Book("Sarah Rivens", "Lakestone"));
         mediatheque.addItem( new CD(10, "Life in Cartoon Motion" ));
         mediatheque.addItem( new CD(12, "NQNT2" ));
-        mediatheque.printCatalog();
-        //mediatheque.printOnlyBooks();
-        //mediatheque.printOnlyCDs();
+
+        MediathequeVisitor med = new CatalogPrinter();
+        mediatheque.accept(med);
+
+
 
     }
 }

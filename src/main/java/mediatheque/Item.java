@@ -3,6 +3,8 @@ package mediatheque;
 public abstract class Item {
 	private String title;
 
+	public abstract void accept(MediathequeVisitor visitor) ;
+
 	protected Item(String title) {
 		this.title = title;
 	}
