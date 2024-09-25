@@ -10,10 +10,9 @@ public class Mediatheque {
 		items.add(i);
 	}
 
-	public void accept(MediathequeVisitor m){
+	public void accept(MediathequeVisitor v){
 		for (Item item : items){
-			item.accept(m);
-
+			item.accept(v);
 		}
 	}
 

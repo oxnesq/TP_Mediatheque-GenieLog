@@ -9,7 +9,12 @@ public class Main {
         mediatheque.addItem( new CD(12, "NQNT2" ));
 
         MediathequeVisitor med = new CatalogPrinter();
+        MediathequeVisitor cds = new OnlyCDPrinter();
+        MediathequeVisitor books = new OnlyBookPrinter();
         mediatheque.accept(med);
+        mediatheque.accept(cds);
+        mediatheque.accept(books);
+
 
 
 

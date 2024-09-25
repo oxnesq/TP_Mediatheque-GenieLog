@@ -18,7 +18,7 @@ public class CD extends Item {
 
 	@Override
 	public void accept(MediathequeVisitor visitor) {
-
+		visitor.visit(this);
 	}
 
 	public void print() {
