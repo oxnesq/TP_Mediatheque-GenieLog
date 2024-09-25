@@ -1,0 +1,5 @@
+1. Quel design pattern, parmi ceux vus en cours, permettrait de déléguer les fonctionnalités dans des classes séparées et de décharger les classes représentant la structure des données de la médiathèque ? Justifier.
+
+On utilise le pattern Visitor dans ce cas car rajouter des fonctionnalités dans Médiathèque n'est pas pratique. On délègue alors ses fonctionnalités dans une interface visitor.
+
+
